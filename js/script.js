@@ -25,10 +25,13 @@ function addWeatherToPage(data) {
   row.className = "weather row flex-column align-items-center text-center mt-5";
   row.innerHTML = `
     <div class="shadow w-50 m-auto p-5">
-      <h2><span class="fs-1">${kelvinToCelcius(
-        data.main.temp
-      )}</span> <span class="text-muted">&#8451;</span></h2>
+      <h2 class="d-flex align-items-center justify-content-center"><img src="https://openweathermap.org/img/wn/${
+        data.weather[0].icon
+      }@2x.png" /><span class="fs-1">${kelvinToCelcius(
+    data.main.temp
+  )}</span> <span class="text-muted">&#8451;</span></h2>
       <p class="fw-semibold text-muted">${search.value.toLocaleUpperCase()}</p>
+      <small>${data.weather[0].main}</small>
     </div>
   `;
   main.append(row);

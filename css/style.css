@@ -1,12 +1,5 @@
 /* global styles  */
 
 :root{
-  --primary-color: #333333;
-  --accent-color: #8e8e8e;
-  --white: #ffffff;
   --transition: all .3s ease 0s;
-}
-
-body{
-  
 }

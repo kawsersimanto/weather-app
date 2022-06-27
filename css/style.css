@@ -3,3 +3,9 @@
 :root{
   --transition: all .3s ease 0s;
 }
+
+@media only screen and (max-width:576px){
+  .btn{
+    width: 100%;
+  }
+}
